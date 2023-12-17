@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/admin.css">
+    <title>Halaman Administrator</title>
+</head>
+<body>
+    <header>
+        <h1 style="margin-top: 50px;">Sunting Data Produk</h1>
+    </header>
+
+    <div class="container">
+        <form id="produkForm" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="nama_produk">Nama Produk:</label>
+                <input type="text" id="nama_produk" name="nama_produk" required>
+            </div>
+
+            <div class="form-group">
+                <label for="deskripsi_produk">Deskripsi Produk:</label>
+                <input type="text" id="deskripsi_produk" name="deskripsi_produk" required>
+            </div>
+
+            <div class="form-group">
+                <label for="harga_produk">Harga Produk:</label>
+                <input type="text" id="harga_produk" name="harga_produk" required>
+            </div>
+
+            <div class="form-group">
+                <label for="jenis_produk">Jenis Produk:</label>
+                <select id="jenis_produk" name="jenis">
+                    <option value="Makanana">Makanan</option>
+                    <option value="Minuman">Minuman</option>
+                    <option value="Alat Tulis">Alat Tulis</option>
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <label for="foto_produk">Foto:</label>
+                <input type="file" id="foto_produk" name="foto_produk" accept="image/*">
+            </div>
+
+            <div class="button-group">
+                <button type="reset" id="resetFormButton">Reset Form</button>
+                <button type="submit" id="tambahDataButton">Tambah Produk</button>
+            </div>
+        </form>
+
+        <table id="tabelProduk">
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Deskripsi</th>
+                    <th>Harga</th>
+                    <th>Jenis</th>
+                    <th>Foto</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <a href="index.html"><button>Home</button></a>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

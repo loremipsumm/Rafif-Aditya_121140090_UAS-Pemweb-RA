@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/view.css">
+    <title>Gallery ITERA</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Gallery Catalogue ITERA</h1>
+            <h3 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"">Gallery ITERA menjual berbagai kebutuhan bagi para masyarakat Institut Teknologi Sumatera</h3>
+        </div>
+        <div class="header-button">
+            <button id="adminButton">Administrator</button>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <table id="tabelProduk">
+            <tbody style="width: 30%;">
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        var adminButton = document.getElementById('adminButton');
+        adminButton.addEventListener('click', function() {
+            window.location.href = 'admin.html';
+        });
+    </script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
